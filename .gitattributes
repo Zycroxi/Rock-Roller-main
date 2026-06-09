@@ -77,14 +77,10 @@ Packages/packages-lock.json linguist-generated
 # 3D models
 *.3dm                   lfs
 *.3ds                   lfs
-*.blend                 lfs
-*.blend1                lfs
 *.c4d                   lfs
 *.collada               lfs
 *.dae                   lfs
 *.dxf                   lfs
-*.FBX                   lfs
-*.fbx                   lfs
 *.jas                   lfs
 *.lws                   lfs
 *.lxo                   lfs
