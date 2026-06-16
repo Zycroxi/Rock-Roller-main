@@ -4,35 +4,60 @@ using TMPro;
 public class PlayerController : MonoBehaviour
 {
     public float moveForce = 10f;
+
     private Rigidbody rb;
 
     public int score = 0;
     public float growthAmount = 0.1f;
-    public TextMeshProUGUI scoreText;
+
+    public TMP_Text scoreText;
+    public TMP_Text rankText;
+
+    [System.Serializable]
+    public class Rank
+    {
+        public string rankName;
+        public int requiredScore;
+    }
+
+    public Rank[] ranks;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
 
         if (scoreText != null)
-        {
             scoreText.text = "Score: 0";
-        }
+
+        UpdateRank(score);
     }
 
     public void CollectItem()
     {
         score++;
 
-        // Increase size
         transform.localScale += Vector3.one * growthAmount;
 
         Debug.Log("Score: " + score);
 
         if (scoreText != null)
-        {
             scoreText.text = "Score: " + score;
+
+        UpdateRank(score);
+    }
+
+    void UpdateRank(int score)
+    {
+        string currentRank = "E";
+
+        foreach (var rank in ranks)
+        {
+            if (score >= rank.requiredScore)
+                currentRank = rank.rankName;
         }
+
+        if (rankText != null)
+            rankText.text = "Rank: " + currentRank;
     }
 
     void FixedUpdate()

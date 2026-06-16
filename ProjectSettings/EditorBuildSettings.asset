@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu Screen.unity
     guid: 87589c26f2969204c9e8c47d7d0bb15c
   - enabled: 1
-    path: Assets/Scenes/Gameplay.unity
+    path: Assets/Scenes/Glacier.unity
     guid: 205e01dc3959b6a4b888b9ea1c615c83
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
