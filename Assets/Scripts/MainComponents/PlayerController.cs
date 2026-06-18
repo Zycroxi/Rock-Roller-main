@@ -3,7 +3,7 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveForce = 10f;
+    public float torqueForce = 500f;
 
     private Rigidbody rb;
 
@@ -38,8 +38,6 @@ public class PlayerController : MonoBehaviour
 
         transform.localScale += Vector3.one * growthAmount;
 
-        Debug.Log("Score: " + score);
-
         if (scoreText != null)
             scoreText.text = "Score: " + score;
 
@@ -62,20 +60,32 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector3 move = Vector3.zero;
+        Vector3 torque = Vector3.zero;
 
         if (Input.GetKey(KeyCode.W))
-            move += Vector3.forward;
+            torque += Vector3.right;
 
         if (Input.GetKey(KeyCode.S))
-            move += Vector3.back;
+            torque += Vector3.left;
 
         if (Input.GetKey(KeyCode.A))
-            move += Vector3.left;
+            torque += Vector3.forward;
 
         if (Input.GetKey(KeyCode.D))
-            move += Vector3.right;
+            torque += Vector3.back;
 
-        rb.AddForce(move.normalized * moveForce, ForceMode.Force);
+        rb.AddTorque(torque * torqueForce);
+
+        rb.angularVelocity = Vector3.ClampMagnitude(rb.angularVelocity, 10f);
+    }
+
+    public DeathManager deathManager;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Death"))
+        {
+            deathManager.Die();
+        }
     }
 }
