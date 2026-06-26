@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class Coin : MonoBehaviour
+public class MegaCoin : MonoBehaviour
 {
-    public int scoreValue = 1;
+    public int scoreValue = 10;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,4 +14,5 @@ public class Coin : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }

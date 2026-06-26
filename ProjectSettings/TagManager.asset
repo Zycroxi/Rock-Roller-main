@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Death
+  - Coin1
+  - Coin10
   layers:
   - Default
   - TransparentFX

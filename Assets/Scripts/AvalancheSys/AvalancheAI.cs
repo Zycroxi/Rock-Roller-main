@@ -71,20 +71,20 @@ public class AvalancheAI : MonoBehaviour
 
     void SpawnAvalanche()
     {
-        Vector3 behindPlayer = -player.forward * 30f;
+        Vector3 moveDirection = playerRB.linearVelocity.normalized;
 
-        // Keep the same height as the player
-        behindPlayer.y = 0;
+        if (moveDirection.sqrMagnitude < 0.01f)
+        {
+            moveDirection = Vector3.forward; // fallback
+        }
 
-        Vector3 spawnPosition = player.position + behindPlayer;
+        Vector3 spawnPosition = player.position - moveDirection * 30f;
 
         snowWall = Instantiate(
             snowWallPrefab,
             spawnPosition,
             Quaternion.identity
         );
-
-        Debug.Log("Avalanche spawned behind player");
     }
 
 

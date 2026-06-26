@@ -6,30 +6,44 @@ public class MenuManager : MonoBehaviour
     // Global access states for player/enemy scripts to check
     public static bool isPaused = false;
     public static bool isDead = false;
+    private bool gameEnded = false;
+
+    [Header("Player")]
+    [SerializeField] private PlayerController player;
+
+    [Header("Win UI Text")]
+    [SerializeField] private TMPro.TMP_Text winScoreText;
+    [SerializeField] private TMPro.TMP_Text winRankText;
 
     [Header("UI Panels")]
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject deathPanel;
+    [SerializeField] private GameObject winPanel;
+
+    [Header("Win Settings")]
+    [SerializeField] private int playerScore = 0;
+    [SerializeField] private int winningScore = 40;
 
     [Header("Scene Settings")]
     [SerializeField] private string mainMenuSceneName = "MainMenuScene";
 
     void Start()
     {
-        // Force clean state at level start
         isPaused = false;
         isDead = false;
+        gameEnded = false;
+
         Time.timeScale = 1f;
 
         if (pausePanel != null) pausePanel.SetActive(false);
         if (deathPanel != null) deathPanel.SetActive(false);
+        if (winPanel != null) winPanel.SetActive(false);
 
         LockCursor();
     }
 
     void Update()
     {
-        // Block pausing entirely if the player is already dead
         if (isDead) return;
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -38,6 +52,41 @@ public class MenuManager : MonoBehaviour
                 ResumeGame();
             else
                 PauseGame();
+        }
+    }
+
+    // Call this whenever the player earns points
+    public void AddScore(int amount)
+    {
+        playerScore += amount;
+        Debug.Log("Score: " + playerScore);
+    }
+
+    // Call this when the level ends
+    public void EndLevel()
+    {
+        if (gameEnded) return;
+        gameEnded = true;
+
+        Time.timeScale = 0f;
+        UnlockCursor();
+
+        int finalScore = player.score;
+        string finalRank = player.GetCurrentRank();
+
+        if (finalScore >= winningScore)
+        {
+            winPanel.SetActive(true);
+
+            if (winScoreText != null)
+                winScoreText.text = "Final Score: " + finalScore;
+
+            if (winRankText != null)
+                winRankText.text = "Rank: " + finalRank;
+        }
+        else
+        {
+            deathPanel.SetActive(true);
         }
     }
 
@@ -58,16 +107,16 @@ public class MenuManager : MonoBehaviour
         LockCursor();
     }
 
-    // --- DEATH SCREEN FUNCTIONS ---
-    // Call this function from your Player Health / Damage scripts when HP hits 0
+    // --- LOSE SCREEN ---
     public void TriggerDeath()
     {
+        if (gameEnded) return;
+        gameEnded = true;
+
         isDead = true;
-        Time.timeScale = 0f; // Freeze gameplay on death
+        Time.timeScale = 0f;
 
-        if (pausePanel != null) pausePanel.SetActive(false); // Close pause menu if open
-        if (deathPanel != null) deathPanel.SetActive(true);  // Show death screen
-
+        deathPanel.SetActive(true);
         UnlockCursor();
     }
 
@@ -91,7 +140,6 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
     }
 
-    // --- CURSOR HELPERS ---
     private void LockCursor()
     {
         Cursor.lockState = CursorLockMode.Locked;

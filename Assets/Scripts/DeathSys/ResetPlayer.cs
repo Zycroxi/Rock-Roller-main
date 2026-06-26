@@ -2,21 +2,25 @@ using UnityEngine;
 
 public class ResetPlayer : MonoBehaviour
 {
-    public Transform resetPoint; // where player will be sent
+    [Header("UI")]
+    public GameObject deathPanel;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            other.transform.position = resetPoint.position;
+            // Pause the game
+            Time.timeScale = 0f;
 
-            // Optional: reset velocity if player has Rigidbody
-            Rigidbody rb = other.GetComponent<Rigidbody>();
-            if (rb != null)
+            // Show death panel
+            if (deathPanel != null)
             {
-                rb.linearVelocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
+                deathPanel.SetActive(true);
             }
+
+            // Unlock mouse cursor for UI interaction
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }

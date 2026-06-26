@@ -6,8 +6,7 @@ public class AvalancheHit : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerController>()
-            .deathManager.Die();
+            FindFirstObjectByType<MenuManager>().TriggerDeath();
         }
     }
 }
