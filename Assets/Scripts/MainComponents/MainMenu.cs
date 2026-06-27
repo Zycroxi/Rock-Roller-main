@@ -4,10 +4,12 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public GameObject howToPlayPanel;
+    public GameObject creditsPanel;
 
     // Main menu objects to hide
     public GameObject playButton;
     public GameObject howToPlayButton;
+    public GameObject creditsButton;
     public GameObject quitButton;
     public GameObject gameNameText;
 
@@ -22,27 +24,49 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void OpenHowToPlay()
+    // Hide the main menu
+    void HideMainMenu()
     {
-        // Show instructions
-        howToPlayPanel.SetActive(true);
-
-        // Hide main menu
         playButton.SetActive(false);
         howToPlayButton.SetActive(false);
+        creditsButton.SetActive(false);
         quitButton.SetActive(false);
         gameNameText.SetActive(false);
     }
 
-    public void CloseHowToPlay()
+    // Show the main menu
+    void ShowMainMenu()
     {
-        // Hide instructions
-        howToPlayPanel.SetActive(false);
-
-        // Show main menu again
         playButton.SetActive(true);
         howToPlayButton.SetActive(true);
+        creditsButton.SetActive(true);
         quitButton.SetActive(true);
         gameNameText.SetActive(true);
+    }
+
+    // HOW TO PLAY
+    public void OpenHowToPlay()
+    {
+        HideMainMenu();
+        howToPlayPanel.SetActive(true);
+    }
+
+    public void CloseHowToPlay()
+    {
+        howToPlayPanel.SetActive(false);
+        ShowMainMenu();
+    }
+
+    // CREDITS
+    public void OpenCredits()
+    {
+        HideMainMenu();
+        creditsPanel.SetActive(true);
+    }
+
+    public void CloseCredits()
+    {
+        creditsPanel.SetActive(false);
+        ShowMainMenu();
     }
 }

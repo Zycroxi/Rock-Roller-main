@@ -95,7 +95,12 @@ public class MenuManager : MonoBehaviour
     {
         isPaused = true;
         Time.timeScale = 0f;
-        if (pausePanel != null) pausePanel.SetActive(true);
+
+        PauseAllAudio();
+
+        if (pausePanel != null)
+            pausePanel.SetActive(true);
+
         UnlockCursor();
     }
 
@@ -103,7 +108,12 @@ public class MenuManager : MonoBehaviour
     {
         isPaused = false;
         Time.timeScale = 1f;
-        if (pausePanel != null) pausePanel.SetActive(false);
+
+        ResumeAllAudio();
+
+        if (pausePanel != null)
+            pausePanel.SetActive(false);
+
         LockCursor();
     }
 
@@ -150,5 +160,28 @@ public class MenuManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+
+    private void PauseAllAudio()
+    {
+        AudioSource[] allAudio = FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
+
+        foreach (AudioSource audioSource in allAudio)
+        {
+            if (audioSource.isPlaying)
+            {
+                audioSource.Pause();
+            }
+        }
+    }
+
+    private void ResumeAllAudio()
+    {
+        AudioSource[] allAudio = FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
+
+        foreach (AudioSource audioSource in allAudio)
+        {
+            audioSource.UnPause();
+        }
     }
 }

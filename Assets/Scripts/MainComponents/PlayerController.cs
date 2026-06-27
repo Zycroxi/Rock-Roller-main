@@ -15,6 +15,14 @@ public class PlayerController : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text rankText;
 
+    [Header("Rolling Sound")]
+    public AudioSource rollingAudio;
+    public LayerMask groundLayer;
+    public float groundCheckDistance = 0.6f;
+    private SphereCollider sphereCollider;
+
+    private bool isGrounded;
+
     [System.Serializable]
     public class Rank
     {
@@ -27,6 +35,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        sphereCollider = GetComponent<SphereCollider>();
 
         originalTorqueForce = torqueForce;
 
@@ -73,6 +82,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        CheckGround();
+
         Vector3 torque = Vector3.zero;
 
         if (Input.GetKey(KeyCode.W))
@@ -90,6 +101,23 @@ public class PlayerController : MonoBehaviour
         rb.AddTorque(torque * torqueForce);
 
         rb.angularVelocity = Vector3.ClampMagnitude(rb.angularVelocity, 10f);
+
+        // Play rolling sound only while grounded and moving
+        if (rollingAudio != null)
+        {
+            bool isRolling = rb.angularVelocity.magnitude > 0.2f;
+
+            if (isGrounded && isRolling)
+            {
+                if (!rollingAudio.isPlaying)
+                    rollingAudio.Play();
+            }
+            else
+            {
+                if (rollingAudio.isPlaying)
+                    rollingAudio.Stop();
+            }
+        }
     }
 
     public class DeathTrigger : MonoBehaviour
@@ -133,5 +161,19 @@ public class PlayerController : MonoBehaviour
         }
 
         return currentRank;
+    }
+
+    void CheckGround()
+    {
+        float radius = sphereCollider.radius * transform.lossyScale.x;
+
+        isGrounded = Physics.SphereCast(
+            transform.position,
+            radius * 0.9f,
+            Vector3.down,
+            out RaycastHit hit,
+            radius + 0.1f,
+            groundLayer
+        );
     }
 }
