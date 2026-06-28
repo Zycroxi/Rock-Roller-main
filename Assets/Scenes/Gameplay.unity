@@ -175,6 +175,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!4 &43835903 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4124310688620620046, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
@@ -371,6 +373,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (21)
@@ -495,6 +505,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (15)
@@ -552,6 +570,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (5)
@@ -609,6 +635,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (4)
@@ -704,6 +738,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1001 &152654722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -894,6 +930,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1001 &237980368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1007,6 +1045,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1001 &247320443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1265,7 +1305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 884da72123ee3e14a9e3e5c7253da8d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -41.44
+      value: -41.64
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 884da72123ee3e14a9e3e5c7253da8d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2096,6 +2136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &381988882
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2295,6 +2337,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (20)
@@ -2984,6 +3034,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (31)
@@ -3151,6 +3209,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!4 &500896433 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4124310688620620046, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
@@ -3598,6 +3658,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (8)
@@ -3760,6 +3828,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1 &547280631 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb1c1f44eca66a04ba5826cad69349fe, type: 3}
@@ -3878,6 +3948,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1 &557463574 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb1c1f44eca66a04ba5826cad69349fe, type: 3}
@@ -3901,6 +3973,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &557463579
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3938,7 +4012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 884da72123ee3e14a9e3e5c7253da8d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -93.5
+      value: -94.55
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 884da72123ee3e14a9e3e5c7253da8d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3995,6 +4069,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (17)
@@ -4103,6 +4185,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &578433703
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4139,6 +4223,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (3)
@@ -4211,6 +4303,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &597855614
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4347,6 +4441,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1001 &599300892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4355,6 +4451,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (9)
@@ -4422,6 +4526,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (2)
@@ -4631,11 +4743,11 @@ PrefabInstance:
       objectReference: {fileID: 1292381045635644008, guid: caaa0c3675c91444b947f1039a813d71, type: 3}
     - target: {fileID: 6955721862955362724, guid: ba935253b27bc274f97a08df20d2d12d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 395.38367
+      value: 597.3061
       objectReference: {fileID: 0}
     - target: {fileID: 6955721862955362724, guid: ba935253b27bc274f97a08df20d2d12d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 554.0789
+      value: 742.7428
       objectReference: {fileID: 0}
     - target: {fileID: 6955721862955362724, guid: ba935253b27bc274f97a08df20d2d12d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4643,11 +4755,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955721862955362724, guid: ba935253b27bc274f97a08df20d2d12d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -272.1
+      value: -353.3
       objectReference: {fileID: 0}
     - target: {fileID: 6955721862955362724, guid: ba935253b27bc274f97a08df20d2d12d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1099
+      value: 1083.5
       objectReference: {fileID: 0}
     - target: {fileID: 6955721862955362724, guid: ba935253b27bc274f97a08df20d2d12d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4767,6 +4879,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (14)
@@ -4824,6 +4944,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (30)
@@ -4984,6 +5112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &791493670
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5092,6 +5222,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &792360765
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5161,6 +5293,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!4 &811432392 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4124310688620620046, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
@@ -5174,6 +5308,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (22)
@@ -6716,6 +6858,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1 &866271977
 GameObject:
   m_ObjectHideFlags: 0
@@ -7433,15 +7577,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c042b8b476f13364bb35745e4ec8217d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.1
+      value: -9.55
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c042b8b476f13364bb35745e4ec8217d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -283.90002
+      value: -285.19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c042b8b476f13364bb35745e4ec8217d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 969.5
+      value: 968.71
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c042b8b476f13364bb35745e4ec8217d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7636,6 +7780,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &973002292
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7808,7 +7954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 884da72123ee3e14a9e3e5c7253da8d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -88.94
+      value: -89.14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 884da72123ee3e14a9e3e5c7253da8d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10237,6 +10383,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1 &1223517748
 GameObject:
   m_ObjectHideFlags: 0
@@ -10589,6 +10737,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1 &1318537515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c042b8b476f13364bb35745e4ec8217d, type: 3}
@@ -10707,6 +10857,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1001 &1323989555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10960,6 +11112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1 &1347133436
 GameObject:
   m_ObjectHideFlags: 0
@@ -11205,6 +11359,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (29)
@@ -12052,6 +12214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1 &1421483112 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb1c1f44eca66a04ba5826cad69349fe, type: 3}
@@ -12098,6 +12262,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!224 &1424566635 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3847492508495569808, guid: db8dd143b721abe458095d4cb75a8b18, type: 3}
@@ -13268,6 +13434,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (19)
@@ -13963,7 +14137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 884da72123ee3e14a9e3e5c7253da8d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -88.74
+      value: -89.19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 884da72123ee3e14a9e3e5c7253da8d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14190,6 +14364,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1657588195754780314, guid: a30cc54d26771c449873b73178e01fad, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657588195754780314, guid: a30cc54d26771c449873b73178e01fad, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 1668885289511278623, guid: a30cc54d26771c449873b73178e01fad, type: 3}
       propertyPath: m_Name
       value: MegaCoin
@@ -14317,13 +14499,13 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7dcce690947bb584e816c8367f9e3498, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -14424,6 +14606,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (7)
@@ -14573,6 +14763,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &1613621963
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14604,6 +14796,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (6)
@@ -14728,6 +14928,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (18)
@@ -15026,6 +15234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1001 &1671823236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15111,6 +15321,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &1671823241
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15142,6 +15354,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (32)
@@ -15214,6 +15434,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &1708687193
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15282,7 +15504,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: cf4897c038a584942aece04593b62338, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -15628,6 +15850,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &1731128365
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15712,6 +15936,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (28)
@@ -16603,15 +16835,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c042b8b476f13364bb35745e4ec8217d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.78
+      value: -11.91
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c042b8b476f13364bb35745e4ec8217d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -224.62
+      value: -224.86
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c042b8b476f13364bb35745e4ec8217d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 848.57
+      value: 848.46
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c042b8b476f13364bb35745e4ec8217d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16676,6 +16908,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin
@@ -16733,6 +16973,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (16)
@@ -16892,7 +17140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 884da72123ee3e14a9e3e5c7253da8d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -34.49
+      value: -34.63
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 884da72123ee3e14a9e3e5c7253da8d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17075,6 +17323,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &1849349205
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17996,6 +18246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1001 &1904937811
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18109,6 +18361,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1001 &1909403925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18855,6 +19109,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin
@@ -19021,6 +19283,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!4 &1985944388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6955721862955362724, guid: ba935253b27bc274f97a08df20d2d12d, type: 3}
@@ -20485,6 +20749,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &2055748269
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -20780,6 +21046,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1001 &2082775262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20788,6 +21056,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin (1)
@@ -21120,6 +21396,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1 &2128043515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb1c1f44eca66a04ba5826cad69349fe, type: 3}
@@ -21166,6 +21444,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!1 &2129214509 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1979847816122073586, guid: ee06fae117b88724f823f3a78f95f8ad, type: 3}
@@ -21256,6 +21536,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
   scoreValue: 1
+  coinCollectSound: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
+  volume: 0.5
 --- !u!136 &2135705135
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -21380,6 +21662,14 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1657588195754780314, guid: a30cc54d26771c449873b73178e01fad, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657588195754780314, guid: a30cc54d26771c449873b73178e01fad, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 1668885289511278623, guid: a30cc54d26771c449873b73178e01fad, type: 3}
       propertyPath: m_Name
       value: MegaCoin
@@ -21997,9 +22287,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8021905864945213453, guid: ee06fae117b88724f823f3a78f95f8ad, type: 3}
+    - {fileID: 2729456662344828233, guid: ee06fae117b88724f823f3a78f95f8ad, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6611643296584561077, guid: ee06fae117b88724f823f3a78f95f8ad, type: 3}
-      insertIndex: 3
+      insertIndex: -1
       addedObject: {fileID: 1533901115}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee06fae117b88724f823f3a78f95f8ad, type: 3}
@@ -22011,6 +22302,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1841575764}
     m_Modifications:
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473065914747468773, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
+      propertyPath: coinCollectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 484432ee5c0da5047a23e11e5b24ea0f, type: 3}
     - target: {fileID: 3636566628673811380, guid: ef6c1b13e274def45a8712ca5ac19ff6, type: 3}
       propertyPath: m_Name
       value: Gold Coin

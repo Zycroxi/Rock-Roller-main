@@ -3,7 +3,7 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
-    public float torqueForce = 500f;
+    public float torqueForce = 80f;
 
     private Rigidbody rb;
     private float originalTorqueForce;
@@ -105,12 +105,21 @@ public class PlayerController : MonoBehaviour
         // Play rolling sound only while grounded and moving
         if (rollingAudio != null)
         {
-            bool isRolling = rb.angularVelocity.magnitude > 0.2f;
+            float speed = rb.linearVelocity.magnitude; // Use rb.velocity.magnitude if using an older Unity version
+            bool isRolling = speed > 0.1f;
 
             if (isGrounded && isRolling)
             {
                 if (!rollingAudio.isPlaying)
                     rollingAudio.Play();
+
+                // Change pitch based on speed
+                rollingAudio.pitch = Mathf.Lerp(0.8f, 2f,
+                    Mathf.InverseLerp(0f, 10f, speed));
+
+                // Change volume based on speed
+                rollingAudio.volume = Mathf.Lerp(0.2f, 1f,
+                    Mathf.InverseLerp(0f, 10f, speed));
             }
             else
             {
@@ -175,5 +184,13 @@ public class PlayerController : MonoBehaviour
             radius + 0.1f,
             groundLayer
         );
+    }
+
+    public void StopRollingSound()
+    {
+        if (rollingAudio != null && rollingAudio.isPlaying)
+        {
+            rollingAudio.Stop();
+        }
     }
 }

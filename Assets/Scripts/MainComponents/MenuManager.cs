@@ -68,6 +68,8 @@ public class MenuManager : MonoBehaviour
         if (gameEnded) return;
         gameEnded = true;
 
+        player.StopRollingSound();
+
         Time.timeScale = 0f;
         UnlockCursor();
 
@@ -122,6 +124,8 @@ public class MenuManager : MonoBehaviour
     {
         if (gameEnded) return;
         gameEnded = true;
+
+        player.StopRollingSound();
 
         isDead = true;
         Time.timeScale = 0f;
